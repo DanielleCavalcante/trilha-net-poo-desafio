@@ -7,10 +7,9 @@ public class Nokia : Smartphone
             base.Numero = numero;
         }
 
-        // TODO: Sobrescrever o método "InstalarAplicativo"
         public override void InstalarAplicativo(string nomeApp)
         {
-            Console.WriteLine($"Instalado o aplicativo {nomeApp} no Nokia");
+            Console.WriteLine($"\nInstalado o aplicativo {nomeApp} no Nokia!");
         }
     }
 }
