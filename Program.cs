@@ -6,9 +6,8 @@
     Console.WriteLine("1 - iPhone");
     Console.WriteLine("2 - Nokia");
     Console.Write("Digite o número correspondente ao telefone desejado: ");
-    string escolha = Console.ReadLine();
 
-    switch (escolha)
+    switch (Console.ReadLine())
     {
         case "1":
             telefone = new Iphone("123456789", "iPhone 15", "IMEI123", 256);
@@ -65,7 +64,7 @@
                 break;
         }
 
-        Console.Write("\nPressione qualquer tecla para continuar: ");
+        Console.Write("\nPressione enter para continuar: ");
         Console.ReadLine();
     }
 
