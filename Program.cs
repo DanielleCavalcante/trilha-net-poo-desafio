@@ -1,26 +1,26 @@
 ﻿using DesafioPOO.Models;
 
+    Smartphone telefone = null;
+
     Console.WriteLine("Escolha o tipo de telefone:");
     Console.WriteLine("1 - iPhone");
     Console.WriteLine("2 - Nokia");
     Console.Write("Digite o número correspondente ao telefone desejado: ");
     string escolha = Console.ReadLine();
 
-    Smartphone telefone = null;
-
     switch (escolha)
     {
         case "1":
-        telefone = new Iphone("123456789", "iPhone 15", "IMEI123", 256);
-        break;
+            telefone = new Iphone("123456789", "iPhone 15", "IMEI123", 256);
+            break;
 
         case "2":
-        telefone = new Nokia("987654321", "Nokia 3030", "IMEI321", 128);
-        break;
+            telefone = new Nokia("987654321", "Nokia 3030", "IMEI321", 128);
+            break;
 
         default:
-        Console.WriteLine("Opção inválida!");
-        return;
+            Console.WriteLine("Opção inválida!");
+            return;
     }
 
     bool exibirMenu = true;

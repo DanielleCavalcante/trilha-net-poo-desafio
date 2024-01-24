@@ -8,8 +8,7 @@ namespace DesafioPOO.Models
         protected int Memoria { get; }
 
         public Smartphone(string numero, string modelo, string imei, int memoria)
-        {
-            
+        { 
             if (string.IsNullOrEmpty(numero))
             {
                 throw new ArgumentException("Número não pode ser vazio.", nameof(numero)); //(Parameter 'numero')
@@ -40,7 +39,7 @@ namespace DesafioPOO.Models
         {
             Console.WriteLine("\nLigando...");
         }
-
+        
         public void ReceberLigacao()
         {
             Console.WriteLine("\nRecebendo ligação...");
